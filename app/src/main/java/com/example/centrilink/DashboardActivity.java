@@ -21,6 +21,7 @@ public class DashboardActivity extends AppCompatActivity {
     CardView medicalPrescription;
     CardView nearbyPharmacy;
     CardView otp;
+    CardView step;
     Button logout;
     ProgressBar qwe;
 
@@ -35,6 +36,7 @@ public class DashboardActivity extends AppCompatActivity {
         nearbyPharmacy = findViewById(R.id.nearby_pharmacy_view);
         logout = findViewById(R.id.buttonLogoutDashboard);
         otp = findViewById(R.id.otp_view);
+        step = findViewById(R.id.step_view);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +71,13 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DashboardActivity.this, NearbyPharmacyActivity.class));
+            }
+        });
+
+        step.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardActivity.this, StepsActivity.class));
             }
         });
 

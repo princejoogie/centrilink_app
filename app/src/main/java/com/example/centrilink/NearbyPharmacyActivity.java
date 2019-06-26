@@ -45,7 +45,7 @@ public class NearbyPharmacyActivity extends FragmentActivity implements OnMapRea
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(14.5505, 121.0468);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Ascott Hotel"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 16));
 
         LatLng watsons = new LatLng(14.550300, 121.044862);
 //        mMap.addMarker(new MarkerOptions().position(watsons).title("Watsons Forbeswood"));

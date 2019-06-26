@@ -66,6 +66,8 @@
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:id="@+id/buttonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
