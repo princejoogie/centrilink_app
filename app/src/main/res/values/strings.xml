@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Centrilink</string>
+    <string name="title_activity_nearby_pharmacy">Map</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

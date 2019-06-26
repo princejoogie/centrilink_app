@@ -12,12 +12,14 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:paddingTop="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
@@ -25,8 +27,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="Logout"
-                android:textSize="10dp" />
+                android:text="Logout" />
+
+
+            <ImageView
+                android:id="@+id/buttonDashboardSettings"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/settings"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
 
         </RelativeLayout>
 
@@ -37,7 +55,6 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:paddingTop="10dp"
                 android:id="@+id/txtDashboard"
                 android:text="Prince Carlo Juguilon"
                 android:textSize="24sp"
@@ -46,7 +63,6 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:layout_marginTop="6dp"
                 android:layout_below="@id/txtDashboard"
                 android:text="princejoogie@gmail.com"
                 android:textSize="14sp"
@@ -55,9 +71,11 @@
                 android:layout_height="wrap_content" />
 
             <ImageView
+                android:id="@+id/pictureniprince"
                 android:layout_alignParentRight="true"
+
                 android:src="@drawable/prince"
-                android:layout_width="75dp"
+                android:layout_width="65dp"
                 android:layout_height="75dp" />
 
         </RelativeLayout>
@@ -176,6 +194,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/nearby_pharmacy_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -211,6 +230,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/otp_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -237,7 +257,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Hospital\nPin"
+                        android:text="OTP"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -262,7 +282,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/settings"
+                        android:src="@drawable/steps_img"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -270,7 +290,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Settings"
+                        android:text="Steps"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 

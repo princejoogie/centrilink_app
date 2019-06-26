@@ -265,7 +265,46 @@
                             android:layout_height="wrap_content" />
                     </LinearLayout>
 
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Yes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="None"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -295,13 +334,27 @@
                     <TextView
                         android:textSize="20dp"
                         android:fontFamily="@font/nunito_bold"
-                        android:text="Past Medical History"
+                        android:text="Family History"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent" />
-                    <TextView
-                        android:text="Allergies:"
+                    <LinearLayout
+                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Bronchial Asthma:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Hypertension:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
 
                     <GridLayout
                         android:columnCount="2"
@@ -321,7 +374,7 @@
 
                             <TextView
                                 android:textAlignment="center"
-                                android:text="Shrimp"
+                                android:text="No"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
@@ -337,39 +390,7 @@
 
                             <TextView
                                 android:textAlignment="center"
-                                android:text="Mefenamic Acid"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Peanuts"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Milk"
+                                android:text="Yes"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content" />
                         </androidx.cardview.widget.CardView>
