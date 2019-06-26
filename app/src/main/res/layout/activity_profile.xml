@@ -8,36 +8,33 @@
     android:background="@drawable/bgapps"
     tools:context=".ProfileActivity">
 
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/buttonProfileBack"
-                android:gravity="center"
+                android:text="back"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:textSize="10dp"
-                android:text="Back" />
-
-            <TextView
-                android:paddingTop="7dp"
-                android:layout_centerInParent="true"
-                android:textColor="@color/white"
-                android:textSize="30dp"
-                android:text="Profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="40dp" />
         </RelativeLayout>
+
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Personal Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

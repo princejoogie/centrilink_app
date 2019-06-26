@@ -11,6 +11,8 @@ import android.widget.Button;
 public class DashboardActivity extends AppCompatActivity {
 
     CardView profile;
+    CardView medicalHistory;
+    CardView medicalPrescription;
     Button logout;
 
     @Override
@@ -20,6 +22,8 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         profile = findViewById(R.id.profile_view);
+        medicalHistory = findViewById(R.id.records_view);
+        medicalPrescription = findViewById(R.id.prescription_view);
         logout = findViewById(R.id.buttonLogoutDashboard);
 
         logout.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +37,20 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DashboardActivity.this, ProfileActivity.class));
+            }
+        });
+
+        medicalHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardActivity.this, MedicalHistoryActivity.class));
+            }
+        });
+
+        medicalPrescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardActivity.this, MedicalPrescriptionActivity.class));
             }
         });
 

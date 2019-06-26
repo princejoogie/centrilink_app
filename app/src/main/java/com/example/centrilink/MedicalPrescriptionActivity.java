@@ -6,16 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MedicalHistoryActivity extends AppCompatActivity {
+public class MedicalPrescriptionActivity extends AppCompatActivity {
 
     Button back;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medical_history);
+        setContentView(R.layout.activity_medical_prescription);
 
-        back = findViewById(R.id.buttonRecordBack);
+        back = findViewById(R.id.buttonPrescriptionBack);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

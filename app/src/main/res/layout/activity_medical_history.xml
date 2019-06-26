@@ -1,10 +1,709 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grad_bg"
+    android:background="@drawable/bgapps"
     tools:context=".MedicalHistoryActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonRecordBack"
+                android:text="back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Medical History"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Past Medical History"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:text="Allergies:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Shrimp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Mefenamic Acid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Peanuts"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Milk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <TextView
+                        android:text="Skin Diseases:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Rosacea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:text="Melanoma"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Diabetes:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Hepatitis:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Type B"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Type A"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Hypertension:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Others:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Past Medical History"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:text="Allergies:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Shrimp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Mefenamic Acid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Peanuts"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Milk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <TextView
+                        android:text="Skin Diseases:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Rosacea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Melanoma"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Diabetes:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Hepatitis:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Type B"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Type A"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Past Medical History"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:text="Allergies:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Shrimp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Mefenamic Acid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Peanuts"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Milk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <TextView
+                        android:text="Skin Diseases:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Rosacea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Melanoma"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Diabetes:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Hepatitis:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <GridLayout
+                        android:columnCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Type B"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="3dp"
+                            app:cardCornerRadius="6dp"
+                            android:layout_margin="6dp">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:text="Type A"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
