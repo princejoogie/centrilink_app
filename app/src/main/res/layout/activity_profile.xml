@@ -12,7 +12,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:paddingTop="10dp"
@@ -43,8 +43,7 @@
             android:layout_rowWeight="1"
             app:cardElevation="6dp"
             app:cardCornerRadius="12dp"
-            android:layout_margin="12dp"
-            >
+            android:layout_margin="12dp">
 
             <LinearLayout
                 android:orientation="horizontal"
