@@ -32,7 +32,7 @@
             android:textSize="30dp"
             android:textColor="@color/white"
             android:textAlignment="center"
-            android:text="Personal Profile"
+            android:text="Profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
