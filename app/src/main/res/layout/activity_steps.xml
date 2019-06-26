@@ -152,7 +152,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/checked"
+                    android:src="@drawable/number_three_in_a_circle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -165,16 +165,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Prince"
+                        android:text="Optalmologist"
                         android:textAlignment="textStart"
-                        android:textColor="#111111"
+                        android:textColor="#0000FF"
                         android:textSize="25dp" />
 
                     <TextView
                         android:textAlignment="textStart"
                         android:textColor="#6f6f6f"
                         android:textSize="15dp"
-                        android:text="Removing of impacted tooth."
+                        android:text="Annual eye Check-up."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -201,7 +201,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/checked"
+                    android:src="@drawable/number_four_in_circular_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -214,7 +214,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Carlo"
+                        android:text="Cardiologist"
                         android:textAlignment="textStart"
                         android:textColor="#111111"
                         android:textSize="25dp" />
@@ -223,7 +223,7 @@
                         android:textAlignment="textStart"
                         android:textColor="#6f6f6f"
                         android:textSize="15dp"
-                        android:text="Removing of impacted tooth."
+                        android:text="Check of hypertension status."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -250,7 +250,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/checked"
+                    android:src="@drawable/number_five_in_circular_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -263,7 +263,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Juguilon"
+                        android:text="Check-Up"
                         android:textAlignment="textStart"
                         android:textColor="#111111"
                         android:textSize="25dp" />
@@ -272,7 +272,7 @@
                         android:textAlignment="textStart"
                         android:textColor="#6f6f6f"
                         android:textSize="15dp"
-                        android:text="Removing of impacted tooth."
+                        android:text="Check-up for office requirement."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -299,7 +299,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/checked"
+                    android:src="@drawable/number_six_in_a_circle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -312,7 +312,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Dental"
+                        android:text="Payment"
                         android:textAlignment="textStart"
                         android:textColor="#111111"
                         android:textSize="25dp" />
@@ -321,105 +321,7 @@
                         android:textAlignment="textStart"
                         android:textColor="#6f6f6f"
                         android:textSize="15dp"
-                        android:text="Removing of impacted tooth."
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp"
-            android:layout_margin="12dp">
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:padding="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:src="@drawable/checked"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <LinearLayout
-                    android:paddingLeft="20dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Dental"
-                        android:textAlignment="textStart"
-                        android:textColor="#111111"
-                        android:textSize="25dp" />
-
-                    <TextView
-                        android:textAlignment="textStart"
-                        android:textColor="#6f6f6f"
-                        android:textSize="15dp"
-                        android:text="Removing of impacted tooth."
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp"
-            android:layout_margin="12dp">
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:padding="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:src="@drawable/checked"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <LinearLayout
-                    android:paddingLeft="20dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Dental"
-                        android:textAlignment="textStart"
-                        android:textColor="#111111"
-                        android:textSize="25dp" />
-
-                    <TextView
-                        android:textAlignment="textStart"
-                        android:textColor="#6f6f6f"
-                        android:textSize="15dp"
-                        android:text="Removing of impacted tooth."
+                        android:text="Payment of bill statement."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
