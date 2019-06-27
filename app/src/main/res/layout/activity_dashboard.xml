@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps"
     tools:context=".DashboardActivity"
+    android:background="@drawable/grad_bg"
     >
 
     <LinearLayout
@@ -32,10 +32,10 @@
 
             <ImageView
                 android:id="@+id/buttonDashboardSettings"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/settings"
                 android:layout_width="32dp"
-                android:layout_height="32dp" />
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/settings" />
 
         </RelativeLayout>
 
@@ -55,10 +55,10 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:textColor="@color/white"
                 android:id="@+id/txtDashboard"
                 android:text="Prince Carlo Juguilon"
                 android:textSize="24sp"
-                android:textColor="#FFFFFF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -73,7 +73,6 @@
             <ImageView
                 android:id="@+id/pictureniprince"
                 android:layout_alignParentRight="true"
-
                 android:src="@drawable/prince"
                 android:layout_width="65dp"
                 android:layout_height="75dp" />
@@ -109,7 +108,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/profile1"
+                        android:src="@drawable/ic_history_svg"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -146,7 +145,8 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/steps_img"
+
+                        android:src="@drawable/ic_steps_svg"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -182,7 +182,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/prescription"
+                        android:src="@drawable/ic_prescription_svg"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -219,7 +219,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/history"
+                        android:src="@drawable/ic_history_svg"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -256,7 +256,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/pin"
+                        android:src="@drawable/ic_key_svg"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
 
@@ -293,7 +293,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/nearby"
+                        android:src="@drawable/ic_nearby_svg"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:contentDescription="TODO" />

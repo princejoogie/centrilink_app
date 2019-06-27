@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps"
+    android:background="@drawable/grad_bg"
+
     tools:context=".MedicalHistoryActivity">
 
 
@@ -29,8 +30,8 @@
         </RelativeLayout>
 
         <TextView
-            android:textSize="30dp"
             android:textColor="@color/white"
+            android:textSize="30dp"
             android:textAlignment="center"
             android:text="Medical History"
             android:layout_width="match_parent"
