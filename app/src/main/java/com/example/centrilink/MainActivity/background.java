@@ -2,6 +2,7 @@ package com.example.centrilink.MainActivity;
 
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.View;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -69,5 +70,6 @@ public class background extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
+        MainActivity.bars.setVisibility(View.VISIBLE);
     }
 }

@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginBtn(View view) {
-        bars.setVisibility(View.VISIBLE);
         String email = email1.getText().toString();
         password = password1.getText().toString();
 
@@ -76,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("email", data_email);
                 i.putExtra("image", data_image);
 
-                password1.setText("");
+//                password1.setText("");
                 startActivity(i);
 
             } else {

@@ -42,6 +42,7 @@ public class NearbyPharmacyActivity extends FragmentActivity implements OnMapRea
         });
     }
 
+//    qweqwe
 
     /**
      * Manipulates the map once available.

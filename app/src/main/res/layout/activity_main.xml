@@ -15,6 +15,7 @@
 
         <ImageView
             android:paddingTop="100dp"
+            android:paddingBottom="35dp"
             android:src="@mipmap/logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:paddingTop="50dp"
+                android:paddingTop="15dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
@@ -40,7 +41,7 @@
                 android:inputType="textEmailAddress" />
 
             <EditText
-                android:paddingTop="30dp"
+                android:paddingTop="15dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
@@ -91,6 +92,8 @@
         android:layout_height="match_parent">
 
         <ProgressBar
+            android:indeterminate="true"
+            android:indeterminateTint="#FFFFFF"
             android:id="@+id/progress_bar"
             android:visibility="invisible"
             android:layout_width="match_parent"
