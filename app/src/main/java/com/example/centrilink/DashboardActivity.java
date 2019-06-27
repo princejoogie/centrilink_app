@@ -4,15 +4,17 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.example.centrilink.MainActivity.MainActivity;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -23,7 +25,8 @@ public class DashboardActivity extends AppCompatActivity {
     CardView otp;
     CardView step;
     Button logout;
-    ProgressBar qwe;
+    TextView nameDash, emailDash;
+    String str, qweqwqwe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,19 @@ public class DashboardActivity extends AppCompatActivity {
         logout = findViewById(R.id.buttonLogoutDashboard);
         otp = findViewById(R.id.otp_view);
         step = findViewById(R.id.step_view);
+
+//        getActivity().runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+        nameDash = findViewById(R.id.dashboardName);
+        emailDash = findViewById(R.id.dashboardEmail);
+
+        Intent loginn = getIntent();
+        str = loginn.getExtras().getString("name");
+        qweqwqwe = loginn.getExtras().getString("email");
+
+        nameDash.setText(str);
+        emailDash.setText(qweqwqwe);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

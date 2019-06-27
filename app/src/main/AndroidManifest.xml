@@ -39,7 +39,7 @@
         <activity android:name=".MedicalHistoryActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".DashboardActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

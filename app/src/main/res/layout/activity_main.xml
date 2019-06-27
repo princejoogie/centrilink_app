@@ -6,24 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/grad_bg"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity.MainActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <ImageView
             android:paddingTop="100dp"
-            android:textAlignment="center"
-            android:text="Centrilink"
-            android:textSize="64dp"
-            android:textColor="@color/white"
+            android:src="@mipmap/logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <LinearLayout
-            android:paddingTop="100dp"
+            android:paddingTop="25sp"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:orientation="vertical"
@@ -36,7 +33,7 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:hint="Email"
-                android:id="@+id/editText2"
+                android:id="@+id/email_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -48,7 +45,7 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:hint="Password"
-                android:id="@+id/editText3"
+                android:id="@+id/password_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -73,7 +70,8 @@
                 android:layout_height="45dp"
                 app:cardElevation="5dp"
                 app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="loginBtn">
 
                 <TextView
                     android:textAlignment="center"
@@ -91,6 +89,7 @@
         android:padding="150sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ProgressBar
             android:id="@+id/progress_bar"
             android:visibility="invisible"

@@ -1,8 +1,13 @@
 package com.example.centrilink;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -15,16 +20,26 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class NearbyPharmacyActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap, watsonsMap;
+    private GoogleMap mMap;
+    CardView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nearby_pharmacy);
+
+        back = findViewById(R.id.map_back);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
 
@@ -40,18 +55,37 @@ public class NearbyPharmacyActivity extends FragmentActivity implements OnMapRea
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        watsonsMap = googleMap;
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(14.5505, 121.0468);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Ascott Hotel"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 16));
 
-        LatLng watsons = new LatLng(14.550300, 121.044862);
-//        mMap.addMarker(new MarkerOptions().position(watsons).title("Watsons Forbeswood"));
-        MarkerOptions marker = new MarkerOptions().position(new LatLng(14.550300, 121.044862)).title("Watsons Forbeswood");
-//        marker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.my_marker_icon)));
-//        marker.icon(BitmapDescriptorFactory.fromResource())
+        int height = 86;
+        int width = 60;
+        BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.mipmap.tangina);
+        Bitmap b=bitmapdraw.getBitmap();
+        Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
+
+        MarkerOptions watsons = new MarkerOptions().position(new LatLng(14.550300, 121.044862)).title("Watsons Forbeswood");
+        watsons.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        mMap.addMarker(watsons);
+
+        MarkerOptions mercurydrug = new MarkerOptions().position(new LatLng(14.554453, 121.047704)).title("Mercury Drug BGC");
+        mercurydrug.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        mMap.addMarker(mercurydrug);
+
+        MarkerOptions mercurydrugparkway = new MarkerOptions().position(new LatLng(14.551144, 121.055671)).title("Mercury Drug Parkway");
+        mercurydrugparkway.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        mMap.addMarker(mercurydrugparkway);
+
+        MarkerOptions tgpp = new MarkerOptions().position(new LatLng(14.554885, 121.04404)).title("Watsons BGC");
+        tgpp.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        mMap.addMarker(tgpp);
+
+        MarkerOptions watso = new MarkerOptions().position(new LatLng(14.555865, 121.044371)).title("The Generics Pharmacy");
+        watso.icon(BitmapDescriptorFactory.fromBitmap(smallMarker));
+        mMap.addMarker(watso);
     }
 
     @Override

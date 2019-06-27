@@ -14,7 +14,7 @@ public class MedicalPrescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medical_prescription);
 
-        back = findViewById(R.id.buttonPrescriptionBack);
+            back = findViewById(R.id.buttonPrescriptionBack);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
