@@ -38,14 +38,376 @@
             android:layout_height="wrap_content" />
 
         <RelativeLayout
-            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Physical Profile Record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Active Temporary Profiles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Profile  |  Severity  |  Cause  |  Status  |  Doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                    <TextView
+                                        android:padding="5dp"
+                                        android:text="Ankle Pain"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Severe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Sports"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="AD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Smith, M MD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Shoulder Pain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Moderate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Training"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="AD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Smith, M MD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Thumb Pain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Mild"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Off-duty Activities"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="AD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                app:cardCornerRadius="3dp"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="Field, S MD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -64,8 +426,12 @@
                         android:textSize="20dp"
                         android:fontFamily="@font/nunito_bold"
                         android:text="Past Medical History"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@android:color/darker_gray"/>
                     <TextView
                         android:text="Allergies:"
                         android:layout_width="match_parent"
@@ -79,13 +445,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -95,13 +463,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -111,13 +481,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -127,13 +499,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -157,13 +531,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -173,13 +549,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                         <TextView
                             android:textAlignment="center"
@@ -218,13 +596,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -234,13 +614,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -277,13 +659,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -293,13 +677,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -316,14 +702,12 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -342,8 +726,12 @@
                         android:textSize="20dp"
                         android:fontFamily="@font/nunito_bold"
                         android:text="Family History"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@android:color/darker_gray"/>
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -371,13 +759,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -387,13 +777,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -417,13 +809,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -433,13 +827,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -478,13 +874,15 @@
                         android:layout_height="wrap_content">
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
 
                             <TextView
                                 android:textAlignment="center"
@@ -494,14 +892,15 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
                             android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="3dp">
                             <TextView
                                 android:textAlignment="center"
                                 android:text="Type A"
@@ -512,225 +911,7 @@
                     </GridLayout>
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="3dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-                    android:padding="10dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:textSize="20dp"
-                        android:fontFamily="@font/nunito_bold"
-                        android:text="Past Medical History"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent" />
-                    <TextView
-                        android:text="Allergies:"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <GridLayout
-                        android:columnCount="2"
-                        android:alignmentMode="alignMargins"
-                        android:columnOrderPreserved="false"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Shrimp"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Mefenamic Acid"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Peanuts"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Milk"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                    </GridLayout>
-
-                    <TextView
-                        android:text="Skin Diseases:"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <GridLayout
-                        android:columnCount="2"
-                        android:alignmentMode="alignMargins"
-                        android:columnOrderPreserved="false"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Rosacea"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Melanoma"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                    </GridLayout>
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_weight="1"
-                            android:text="Diabetes:"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-
-
-                        <TextView
-                            android:layout_weight="1"
-                            android:text="Hepatitis:"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-
-
-                    <GridLayout
-                        android:columnCount="2"
-                        android:alignmentMode="alignMargins"
-                        android:columnOrderPreserved="false"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Type B"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_rowWeight="1"
-                            app:cardElevation="3dp"
-                            app:cardCornerRadius="6dp"
-                            android:layout_margin="6dp">
-
-                            <TextView
-                                android:textAlignment="center"
-                                android:text="Type A"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-                        </androidx.cardview.widget.CardView>
-
-                    </GridLayout>
-
-                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
